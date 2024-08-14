@@ -1,0 +1,16 @@
+{% extends "loginpage.html" %}
+{% block title %}<title>regstration</title>{% endblock %}
+{% block body %}
+<div style="margin-left: 10%;margin-right: 10%;"><br>
+    <form action="regForm" method="POST">
+        {% csrf_token %}
+        <h1>Registration Page</h1>
+        <br>
+        <hr><br><br>
+        <table>
+            {{rg_form.as_table}}
+        </table><br>
+        <button herf="">Register</button><br>
+    </form>
+</div>
+{% endblock %}

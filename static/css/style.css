@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    background-color: orange;
+    background-position: center;
+    background-size: cover;
+    height: 15vh;
+}
+
+.navBar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon {
+    width: 500px;
+    height: 70px;
+    float: left;
+}
+
+.logo {
+    color: white;
+    font-size: 40px;
+    font-family: Arial;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.menu {
+    width: 400px;
+    height: 70px;
+    float: left;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 16px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: black;
+}
+
+button {
+    background-color: brown;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: 5PX 5PX;
+    font-size: 1rem;
+}
+
+.footer {
+    background-color: orange;
+    color: white;
+    padding: 30px;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
+
+.footTable {
+    width: 100%;
+}
+
+.footTable th {
+    font-weight: bold;
+    text-align: center;
+}
+
+.footTable td {
+    text-align: center;
+}

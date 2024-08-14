@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}<title>login</title>{% endblock %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class="main">
+        <div class="navBar">
+            <div class="icon">
+                <h1 class="logo">School Login</h1>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="../reg">Register</a></li>
+                    <li><a href="../login">Login</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% block body %}
+    <div style="margin-left: 10%;margin-right: 10%;"><br>
+        <form action="logform" method="POST">
+            {% csrf_token %}
+            <h1>Login Page</h1>
+            <br>
+            <hr><br><br>
+            <table>
+                {{lg_form.as_table}}
+            </table><br>
+            <button type="submit">Login</button>
+            <button action="regForm">Register</button><br>
+            <a href="#">Forgot Password ?</a>
+
+        </form>
+    </div>
+    {% endblock %}
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <table class="footTable">
+                        <thead>
+                            <tr>
+                                <th>Services</th>
+                                <th>About</th>
+                                <th>Contact</th>
+                                <th>Partner</th>
+                                <th>Cool Boyz</th>
+                            </tr>
+                            <tr>
+                                <td>Gaurav</td>
+                                <td>Gaurav</td>
+                                <td>Gaurav</td>
+                                <td>Gaurav</td>
+                                <td>Gaurav</td>
+                            </tr>
+                            <tr>
+                                <td>Amit</td>
+                                <td>Amit</td>
+                                <td>Amit</td>
+                                <td>Amit</td>
+                                <td>Amit</td>
+                            </tr>
+                            <tr>
+                                <td>Deepak</td>
+                                <td>Deepak</td>
+                                <td>Deepak</td>
+                                <td>Deepak</td>
+                                <td>Deepak</td>
+                            </tr>
+                            <tr>
+                                <td>Alok</td>
+                                <td>Alok</td>
+                                <td>Alok</td>
+                                <td>Alok</td>
+                                <td>Alok</td>
+                            </tr>
+                            <tr>
+                                <td>Pankaj</td>
+                                <td>Pankaj</td>
+                                <td>Pankaj</td>
+                                <td>Pankaj</td>
+                                <td>Pankaj</td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
